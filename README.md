@@ -26,7 +26,10 @@ var treatments = {
 
 //You're naming this internal variable (propery in this case). You can call it whatever you want, but the more descriptive your variable names, the easier they are to use.
 for property in treatments {
+
     console.log("If you're suffering from " + property + ", you should probably " + treatments[property] + ".") 
+    // or with templateing
+    console.log(`If you're suffering from ${property} you should probably ${treatments[property]}.`)
 }
 
 //Since the issue variable is only taking on the value of keys from the tratements dictionary, we need to use bracket notation to get the matching remedy for each issue.
