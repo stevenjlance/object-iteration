@@ -1,8 +1,7 @@
-OBJECT ITERATION
-=================
+# OBJECT ITERATION
 
-GOAL
-------------------
+## GOAL
+
 In this lab, you'll start to deal with objects that organize data more and more clearly. We'll start with a list of favorite books, but each book is keyed to a person's name.
 
 For example, to print Zara's favorite book, you'd use the code `console.log(favoriteBooks["zara"])` or `console.log(favoriteBooks.zara)`.
@@ -14,8 +13,8 @@ Once you finish your analysis the favoriteBook's object, there is a nested data 
 ![](https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif)
 
 
-TIPS, EXAMPLES, & ANSWERS
--------------------------
+## TIPS, EXAMPLES, & ANSWERS
+
 Iteration for a dictionary is really similar to iteration for a list. Here's an example:
 ```javascript
 var treatments = {
@@ -25,20 +24,17 @@ var treatments = {
   }
 
 //You're naming this internal variable (propery in this case). You can call it whatever you want, but the more descriptive your variable names, the easier they are to use.
-for property in treatments {
+for (var key in treatments) {
 
-    console.log("If you're suffering from " + property + ", you should probably " + treatments[property] + ".") 
+    console.log("If you're suffering from " + key + ", you should probably " + treatments[key] + ".") 
     // or with templateing
-    console.log(`If you're suffering from ${property} you should probably ${treatments[property]}.`)
+    console.log(`If you're suffering from ${key} you should probably ${treatments[key]}.`)
 }
 
 //Since the issue variable is only taking on the value of keys from the tratements dictionary, we need to use bracket notation to get the matching remedy for each issue.
 ```
 
-If you need a boost, you can see answers to challenge 1.
-
-<details>
-  <summary> Click to see a solution to challenge 1 </summary>
+If you need a boost, you can see answers to challenge 1. Solution to challenge 1:
 
   ```javascript
 
@@ -54,6 +50,3 @@ If you need a boost, you can see answers to challenge 1.
     
     console.log(favoriteBooks.jeff)
   ```
-
-</details>
-<br>
